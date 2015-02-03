@@ -1,0 +1,17 @@
+associations:
+    X_SELL:
+        labels:
+            en_US: Cross sell
+            it_IT: Vendite incrociate
+    UPSELL:
+        labels:
+            en_US: Upsell
+            it_IT: Promozione
+    SUBSTITUTION:
+        labels:
+            en_US: Substitution
+            it_IT: Sostituzione
+    PACK:
+        labels:
+            en_US: Pack
+            it_IT: Pacco

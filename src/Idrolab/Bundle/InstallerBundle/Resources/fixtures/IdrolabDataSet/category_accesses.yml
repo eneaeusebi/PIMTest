@@ -1,0 +1,17 @@
+category_accesses:
+    master:
+        viewProducts: [IT support, Manager, Redactor]
+        editProducts: [IT support, Manager, Redactor]
+        ownProducts: [IT support, Manager, Redactor]
+    sales_catalog:
+        viewProducts: [IT support, Manager, Redactor]
+        editProducts: [IT support, Manager, Redactor]
+        ownProducts: [IT support, Manager, Redactor]
+    IDS:
+        viewProducts: [IT support, Manager, Redactor]
+        editProducts: [IT support, Manager, Redactor]
+        ownProducts: [IT support, Manager, Redactor]
+    DUR:
+        viewProducts: [IT support, Manager, Redactor]
+        editProducts: [IT support, Manager, Redactor]
+        ownProducts: [IT support, Manager, Redactor]

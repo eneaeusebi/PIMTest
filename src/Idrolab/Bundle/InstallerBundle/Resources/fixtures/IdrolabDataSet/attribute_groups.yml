@@ -1,0 +1,16 @@
+attribute_groups:
+    other:
+        sort_order: 100
+        labels:
+            it_IT: Altro
+            en_US: Other
+    G000001:
+        sort_order: 1
+        labels:
+            it_IT: Identificazione Articolo
+            en_US: Product Identification
+    G000002:
+        sort_order: 2
+        labels:
+            it_IT: Caratteristiche Standard
+            en_US: Standard Informations

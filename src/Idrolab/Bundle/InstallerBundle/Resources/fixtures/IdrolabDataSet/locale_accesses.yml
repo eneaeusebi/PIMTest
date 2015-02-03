@@ -1,0 +1,7 @@
+locale_accesses:
+    en_US:
+        viewProducts: [All]
+        editProducts: [All]
+    it_IT:
+        viewProducts: [All]
+        editProducts: [All]

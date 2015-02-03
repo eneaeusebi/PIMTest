@@ -1,0 +1,69 @@
+attributes:
+    sku:
+        labels:
+            en_US: SKU
+            it_IT: SKU
+        type:       pim_catalog_identifier
+        group:               G000001
+        unique:              true
+        useableAsGridColumn: true
+        useableAsGridFilter: true
+        sortOrder:           1
+    A000804:
+        labels:
+            it_IT: Codice Articolo
+            en_US: Product Code
+        type:       pim_catalog_text
+        group:               G000001
+        unique:              true
+        useableAsGridColumn: true
+        useableAsGridFilter: true
+        sortOrder:           2
+    A000805:
+        labels:
+            it_IT: Caratteristiche Specifiche
+            en_US: Caratteristiche Specifiche
+        type:       pim_catalog_textarea
+        group:               G000002
+        unique:              false
+        maxCharacters:       1000
+        wysiwygEnabled:      true 
+        useableAsGridColumn: true
+        useableAsGridFilter: true
+        sortOrder:           3
+    A000806:
+        labels:
+            it_IT: Numero Vie
+            en_US: Number of Exits
+        type:       pim_catalog_number
+        group:               G000002
+        unique:              false
+        decimalsAllowed:      false
+        negativeAllowed:     false
+        numberMin:           0
+        numberMax:           5
+        useableAsGridColumn: true
+        useableAsGridFilter: true
+        sortOrder:           4
+    A000807:
+        labels:
+            it_IT: Peso
+            en_US: Weight
+        type:       pim_catalog_metric
+        group:               G000002
+        unique:              false
+        metricFamily:        Weight
+        defaultMetricUnit:   KILOGRAM
+        useableAsGridColumn: true
+        useableAsGridFilter: true
+        sortOrder:           5
+    A000808:
+        labels:
+            it_IT: Marca
+            en_US: Brand
+        type:       pim_catalog_simpleselect
+        group:               G000001
+        unique:              false
+        useableAsGridColumn: true
+        useableAsGridFilter: true
+        sortOrder:           6

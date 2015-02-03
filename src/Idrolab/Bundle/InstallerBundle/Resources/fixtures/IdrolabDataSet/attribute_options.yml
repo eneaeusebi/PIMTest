@@ -1,0 +1,11 @@
+options:
+    V000001:
+        code: IDS
+        attribute:  A000808
+        labels: { it_IT: 'Ideal Standard', en_US: 'Ideal Standard' }
+        sortOrder: 1
+    V000002:
+        code: DUR
+        attribute:  A000808
+        labels: { it_IT: 'Duravit', en_US: 'Duravit' }
+        sortOrder: 2
