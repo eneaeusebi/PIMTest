@@ -1,0 +1,14 @@
+parameters:
+    my_acme_service.class: Idrolab\Bundle\CatalogBundle\Services\MyAcmeService
+    pim_catalog.manager.product.class: Idrolab\Bundle\CatalogBundle\Manager\IdrolabProductManager
+
+services:
+    my_acme_service:
+        class: %my_acme_service.class%
+        arguments:
+            - '@pim_catalog.manager.product'
+
+    my_acme_service_2:
+        class: %my_acme_service.class%
+        arguments:
+            - '@pim_catalog.manager.product'
