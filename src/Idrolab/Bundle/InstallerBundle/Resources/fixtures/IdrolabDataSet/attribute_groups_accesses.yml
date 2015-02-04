@@ -1,0 +1,10 @@
+attribute_groups_accesses:
+    other:
+        viewAttributes: [IT support, Manager, Redactor]
+        editAttributes: [IT support, Manager, Redactor]
+    G000001:
+        viewAttributes: [IT support, Manager, Redactor]
+        editAttributes: [IT support, Manager, Redactor]
+    G000002:
+        viewAttributes: [IT support, Manager, Redactor]
+        editAttributes: [IT support, Manager, Redactor]

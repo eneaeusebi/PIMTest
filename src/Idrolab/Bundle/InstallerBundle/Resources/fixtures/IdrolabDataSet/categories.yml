@@ -1,0 +1,20 @@
+categories:
+    master:
+        labels:
+            en_US: Master catalog
+            it_IT: Catalogo Principale
+    sales_catalog:
+        labels:
+            en_US: Sales catalog
+            it_IT: Catalogo Vendita
+    IDS:
+        labels:
+            en_US: Ids
+            it_IT: Ids
+        parent: sales_catalog
+    DUR:
+        labels:
+            en_US: Dur
+            it_IT: Dur
+        parent: sales_catalog
+            

@@ -99,6 +99,9 @@ class AppKernel extends OroKernel
 
         $bundles = array_merge($bundles, $enterpriseBundles);
 
+        $bundles[] = new Idrolab\Bundle\InstallerBundle\IdrolabInstallerBundle();
+        
+        
         return $bundles;
     }
 
