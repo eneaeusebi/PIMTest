@@ -9,3 +9,13 @@ channels:
             - USD
         tree: master
         color: orange
+    mobile:
+        label: Mobile
+        locales:
+            - en_US
+            - it_IT
+        currencies:
+            - EUR
+            - USD
+        tree: master
+        color: green
