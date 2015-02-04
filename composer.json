@@ -23,7 +23,9 @@
         "symfony/icu": "1.1.0",
         "oro/platform": "1.0.0-beta13",
         "knplabs/knp-menu-bundle":"v2.0.0-alpha2",
-        "knplabs/knp-menu":"v2.0.0-alpha2"
+        "knplabs/knp-menu":"v2.0.0-alpha2",
+        "doctrine/mongodb-odm": "v1.0.0-BETA10@dev",
+        "doctrine/mongodb-odm-bundle": "v3.0.0-BETA6@dev"
     },
     "repositories": [
         {
