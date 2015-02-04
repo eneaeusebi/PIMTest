@@ -1,0 +1,2 @@
+parameters:
+    pim_enrich.form.type.category.class: Idrolab\Bundle\EnrichBundle\Form\Type\CategoryType

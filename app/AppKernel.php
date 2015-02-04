@@ -100,6 +100,8 @@ class AppKernel extends OroKernel
         $bundles = array_merge($bundles, $enterpriseBundles);
 
         $bundles[] = new Idrolab\Bundle\InstallerBundle\IdrolabInstallerBundle();
+        $bundles[] = new Idrolab\Bundle\CatalogBundle\IdrolabCatalogBundle();
+        $bundles[] = new Idrolab\Bundle\EnrichBundle\IdrolabEnrichBundle();
         
         
         return $bundles;
