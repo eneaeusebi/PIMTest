@@ -1,0 +1,8 @@
+custom_entities:
+    brand:
+        entity_class: Idrolab\Bundle\CatalogBundle\Entity\Brand
+        actions:
+            edit:
+                form_type: idrolab_enrich_brand
+            create:
+                form_type: idrolab_enrich_brand

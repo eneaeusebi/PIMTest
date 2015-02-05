@@ -101,6 +101,8 @@ class AppKernel extends OroKernel
 
         $bundles[] = new Pim\Bundle\CustomEntityBundle\PimCustomEntityBundle();
 
+        $bundles[] = new Idrolab\Bundle\CatalogBundle\IdrolabCatalogBundle();
+        $bundles[] = new Idrolab\Bundle\EnrichBundle\IdrolabEnrichBundle();
         $bundles[] = new Idrolab\Bundle\InstallerBundle\IdrolabInstallerBundle();
 
         return $bundles;

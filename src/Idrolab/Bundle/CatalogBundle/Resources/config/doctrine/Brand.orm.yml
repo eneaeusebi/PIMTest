@@ -1,0 +1,31 @@
+Idrolab\Bundle\CatalogBundle\Entity\Brand:
+    type: entity
+    table: idrolab_catalog_brand
+    repositoryClass: Pim\Bundle\CustomEntityBundle\Entity\Repository\CustomEntityRepository
+    fields:
+
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        code:
+            type: string
+            length: 100
+            unique: true
+        label:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+        created:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: create
+        updated:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: update

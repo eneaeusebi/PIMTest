@@ -1,0 +1,5 @@
+services:
+    idrolab_enrich.form.type.brand:
+        class: Idrolab\Bundle\EnrichBundle\Form\Type\BrandType
+        tags:
+            - { name: form.type, alias: idrolab_enrich_brand }
