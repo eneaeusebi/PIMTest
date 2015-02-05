@@ -1,0 +1,13 @@
+oro_menu_config:
+    items:
+        idrolab_enrich_brands:
+            label:              'Brands'
+            route:              'pim_customentity_index'
+            routeParameters:    { customEntityName: brand }
+
+    tree:
+        application_menu:
+            children:
+                pim_enrich_tab:
+                    children:
+                        idrolab_enrich_brands: ~
