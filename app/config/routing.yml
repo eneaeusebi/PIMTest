@@ -24,6 +24,10 @@ pimee_workflow:
 pim_versioning:
     resource: "@PimEnterpriseVersioningBundle/Resources/config/routing.yml"
 
+pim_customentity:
+    prefix: /enrich
+    resource: "@PimCustomEntityBundle/Resources/config/routing.yml"
+
 # Oro platform
 
 oro_default:

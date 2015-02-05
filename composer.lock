@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0753bc768ed9b9c92155ad62b158cc05",
+    "hash": "b5adc54d5ef8d781a9b1f8e44b5a1e97",
     "packages": [
         {
             "name": "a2lix/translation-form-bundle",
@@ -116,6 +116,59 @@
                 "writer"
             ],
             "time": "2015-01-07 14:50:20"
+        },
+        {
+            "name": "akeneo/custom-entity-bundle",
+            "version": "v1.3.0",
+            "target-dir": "Pim/Bundle/CustomEntityBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/akeneo/CustomEntityBundle.git",
+                "reference": "350c9618fd5e62f994bb98a522a0f433585eedd3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/akeneo/CustomEntityBundle/zipball/350c9618fd5e62f994bb98a522a0f433585eedd3",
+                "reference": "350c9618fd5e62f994bb98a522a0f433585eedd3",
+                "shasum": ""
+            },
+            "require": {
+                "akeneo/pim-community-dev": "1.2.*"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "2.0.*@dev"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pim\\Bundle\\CustomEntityBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Antoine Guigan",
+                    "email": "antoine@akeneo.com",
+                    "homepage": "http://akeneo.com"
+                }
+            ],
+            "description": "Akeneo PIM Custom entity bundle",
+            "homepage": "http://akeneo.com",
+            "keywords": [
+                "PIM",
+                "akeneo",
+                "ecommerce",
+                "integration"
+            ],
+            "time": "2014-09-05 09:48:33"
         },
         {
             "name": "akeneo/measure-bundle",
