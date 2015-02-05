@@ -27,9 +27,10 @@ attributes:
         group:               G000002
         unique:              false
         maxCharacters:       1000
-        wysiwygEnabled:      true 
+        wysiwygEnabled:      true
         useableAsGridColumn: true
         useableAsGridFilter: true
+        localizable:         true
         sortOrder:           3
     A000806:
         labels:

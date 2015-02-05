@@ -1,6 +1,6 @@
 families:
     F000001:
-        labels: 
+        labels:
             it_IT: raccordi
             en_US: raccordi
         attributeAsLabel: A000804
@@ -17,7 +17,7 @@ families:
                 - A000808
                 - A000805
     F000002:
-        labels: 
+        labels:
             it_IT: tubi
             en_US: tubes
         attributeAsLabel: A000804
@@ -33,4 +33,3 @@ families:
                 - A000804
                 - A000808
                 - A000807
-                   
