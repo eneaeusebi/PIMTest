@@ -1,0 +1,84 @@
+{% block idrolab_enrich_packaging_collection_row %}
+    <style>
+        .product-packagings {
+            margin-left: 20px;
+        }
+        .product-packagings th, .product-packagings td {
+            width: 100px;
+        }
+        .product-packagings input {
+            width: 90px !important;
+        }
+        .product-packagings i {
+            cursor: pointer;
+        }
+        .product-packagings tfoot td {
+            padding: 20px 0 200px;
+        }
+    </style>
+    <div class='product-packagings'>
+        {% if errors|length > 0 %}
+            <div class="alert alert-error fade in top-messages">
+                <button data-dismiss="alert" class="close" type="button">×</button>
+                <div class="message">
+                    {% for error in errors %}
+                        {% set error = error.messagePluralization is null
+                        ? error.messageTemplate|trans(error.messageParameters, 'validators')
+                        : error.messageTemplate|transchoice(error.messagePluralization, error.messageParameters, 'validators') %}
+                        <ul><li>{{ error }}</li></ul>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+        <table id="{{form.vars.id}}" class="product-packagings pull-left" data-prototype="{{form_row(form.vars.prototype)|e}}">
+            <thead>
+            <tr>
+                <th>Code</th>
+                <th>Height</th>
+                <th>Width</th>
+                <th>Depth</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in form %}
+                {{ form_row(row) }}
+            {% endfor %}
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4"><a href="#" class='add btn'>Ajouter</a></td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script>
+        require(
+            ['jquery'],
+            function ($) {
+                var form = $('#{{form.vars.id}}'), newCount = 1
+                form
+                    .on('click', '.add', function(){
+                        while ($("#{{form.vars.id}}_" + newCount + "_code").size()) {
+                            newCount++
+                        }
+                        form.find('tbody').append($(form.attr('data-prototype').replace(/__name__/g, newCount)))
+                        return false
+                    })
+                    .on('click', '.icon-remove', function(){
+                        $(this).closest("tr").remove()
+                        return false
+                    })
+            }
+        )
+    </script>
+{% endblock %}
+{% block idrolab_enrich_packaging_row %}
+    <tr>
+        <td>{{form_widget(form['code'])}}</td>
+        <td>{{form_widget(form['height'])}}</td>
+        <td>{{form_widget(form['width'])}}</td>
+        <td>{{form_widget(form['depth'])}}</td>
+        <td><i class='icon-remove'></i></td>
+    </tr>
+{% endblock %}

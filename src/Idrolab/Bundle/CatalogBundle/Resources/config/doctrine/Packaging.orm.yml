@@ -1,0 +1,44 @@
+Idrolab\Bundle\CatalogBundle\Entity\Packaging:
+    type: entity
+    table: idrolab_catalog_product_value_packaging
+    uniqueConstraints:
+        value_currency_idx:
+            columns:
+                - code
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        code:
+            type: string
+            length: 100
+            unique: true
+        height:
+            type: float
+            nullable: true
+        width:
+            type: float
+            nullable: true
+        depth:
+            type: float
+            nullable: true
+        created:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: create
+        updated:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: update
+    manyToOne:
+        value:
+            targetEntity: Pim\Bundle\CatalogBundle\Model\ProductValueInterface
+            inversedBy: packagings
+            joinColumns:
+                value_id:
+                    referencedColumnName: id
+                    onDelete: CASCADE

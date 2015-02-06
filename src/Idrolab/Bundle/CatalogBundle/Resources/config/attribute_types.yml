@@ -22,3 +22,12 @@ services:
             - Idrolab\Bundle\CatalogBundle\Entity\Brand
         tags:
             - { name: pim_catalog.attribute_type, alias: idrolab_catalog_brand, entity: '%pim_catalog.entity.product.class%' }
+
+    pim_catalog.attributetype.packaging_collection:
+        class: Idrolab\Bundle\CatalogBundle\AttributeType\PackagingCollectionType
+        arguments:
+            - packagings
+            - idrolab_enrich_packaging_collection
+            - '@pim_catalog.validator.constraint_guesser.chained_attribute'
+        tags:
+            - { name: pim_catalog.attribute_type, alias: idrolab_catalog_packaging_collection, entity: %pim_catalog.entity.product.class% }

@@ -34,6 +34,9 @@ twig:
     strict_variables: "%kernel.debug%"
     globals:
         uservoice_key: %uservoice_key%
+    form:
+        resources:
+            - 'IdrolabEnrichBundle:Form:fields.html.twig'
 
 # Assetic Configuration
 assetic:

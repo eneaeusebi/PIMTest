@@ -143,4 +143,13 @@ Idrolab\Bundle\CatalogBundle\Entity\ProductValue:
                 - refresh
                 - detach
             mappedBy: value
+        packagings:
+            targetEntity: Idrolab\Bundle\CatalogBundle\Entity\Packaging
+            cascade:
+                - remove
+                - persist
+                - refresh
+            mappedBy: value
+            orphanRemoval: true
+
 

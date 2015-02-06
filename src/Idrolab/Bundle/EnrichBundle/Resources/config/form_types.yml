@@ -3,3 +3,13 @@ services:
         class: Idrolab\Bundle\EnrichBundle\Form\Type\BrandType
         tags:
             - { name: form.type, alias: idrolab_enrich_brand }
+
+    idrolab_enrich.form.type.packaging_collection:
+        class: Idrolab\Bundle\EnrichBundle\Form\Type\PackagingCollectionType
+        tags:
+            - { name: form.type, alias: 'idrolab_enrich_packaging_collection' }
+
+    idrolab_enrich.form.type.packaging:
+        class: Idrolab\Bundle\EnrichBundle\Form\Type\PackagingType
+        tags:
+            - { name: form.type, alias: 'idrolab_enrich_packaging' }
